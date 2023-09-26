@@ -1,5 +1,5 @@
 body {
-  background-image: var(--background-image); /* Usamos una variable CSS para la imagen de fondo */
+  background-image: var(--background-image); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 
 .quote-container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para hacer que el texto sea legible */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
   border-radius: 8px;
 }
@@ -60,7 +60,7 @@ button {
 }
 
 .quote-button i {
-  margin-right: 8px; /* Espacio entre el icono y el texto del botón */
+  margin-right: 8px; 
 }
 
 
