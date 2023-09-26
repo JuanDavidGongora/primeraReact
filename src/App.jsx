@@ -67,18 +67,18 @@ const quotes = [
 const App = () => {
   const [quote, setQuote] = useState({});
 
-  // Función para obtener una frase aleatoria
+  
   const getRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
   };
 
-  // Cuando se carga la aplicación, muestra una frase aleatoria
+ 
   useEffect(() => {
     setQuote(getRandomQuote());
   }, []);
 
-  // Función para cambiar la frase actual
+  
   const changeQuote = () => {
     setQuote(getRandomQuote());
   };
@@ -96,12 +96,10 @@ const App = () => {
     '/images/estatua-buda-tallada-montana.jpg',
     '/images/mattia-faloretti-jbrR_ESWK2A-unsplash.jpg',
     '/images/amit-kumar-cT4wxa5jFKU-unsplash.jpg',
-    /* Agrega más rutas de imágenes de fondo aquí */
+    
   ];
   
-  // ...
   
-  // Función para cambiar el fondo aleatoriamente
   const changeBackground = () => {
     const randomIndex = Math.floor(Math.random() * backgroundImages.length);
     const randomBackground = `url(${backgroundImages[randomIndex]})`;
